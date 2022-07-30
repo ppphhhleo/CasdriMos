@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<link rel="stylesheet" href="{{url_for('static', filename='css/index.css') }}" />
+</head>
+<body>
+	<div class = "login">
+		<h2>Welcome to </h2>
+		<img src="/static/img/robot.jpg " class="myimg" />
+		<style type="text/css">
+				.myimg{
+					height:500px;
+					margin-top:10px;
+					margin-bottom:20px;
+					box-shadow:0 0 30px #fff;
+				}
+			</style>
+	</div>
+    <div class="login">
+			<h2>Please LOGIN</h2>
+		<h2>{{hint}}</h2>
+			<form action="http://127.0.0.1:5000/get_login" method="post">
+				<div class="login_box">
+					<input type="text" required name="name" /><label>@name</label>
+				</div>
+				<div class="login_box">
+                    <input type="password"  required name="password" /><label>@password</label>
+				</div>
+				<a>
+					<input type="submit" value="Submit" name="login_submit"/>
+				</a>
+			</form>
+		</div>
+	<div class="login">
+	<h2>Register as New Driver</h2>
+		<form action="http://127.0.0.1:5000/register" method="post">
+			<div class="login_box">
+				<input type="submit" name="register" value="register">
+
+             </div>
+
+  </form>
+	</div>
+<div class="login">
+	<h2>Let's keep life safe and sound</h2>
+		<img src="/static/img/human.jpg" class="myimg" />
+	<style type="text/css">
+				.myimg{
+					height:300px;
+					margin-top:10px;
+					margin-bottom:20px;
+					box-shadow:0 0 30px #fff;
+				}
+			</style>
+	</div>
+
+</body>
+</html>

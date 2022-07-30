@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Welcome</title>
+    <!-- Bootstrap -->
+<!--    <link href="css/bootstrap.min.css" rel="stylesheet">-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/index.css') }}" />
+    <![endif]-->
+  </head>
+  <body>
+    <h1 style="text-align: center;">Hello, world!</h1>
+    <p style="text-align: center;"><a href="{{ url_for("cool_form") }}" rel="external nofollow" >Check out this cool form!</a></p>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <div style="text-align: center;">
+  <img  src="/static/t1.jpg" class="myimg" />
+	<style type="text/css">
+				.myimg{
+					height:300px;
+					margin-top:10px;
+					margin-bottom:20px;
+					box-shadow:0 0 30px #fff;
+				}
+			</style>
+      </div>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+  </body>
+</html>

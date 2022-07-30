@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>YOLOV5 Real Time Inference</title>
+    <style>
+      .corner {
+        border-radius: 25px;
+        border: 5px solid #212aad;
+        padding: 0px;
+        width:60%;
+        height:auto;
+        text-align: center;
+      }
+
+      .container {
+        justify-content: center;
+        text-align: center;
+        height:70%;
+        /*border: 1px solid black;*/
+      }
+
+    </style>
+  </head>
+
+  <body >
+      <div class="container">
+        <div class="row" style="text-align: center; width:100%;">
+          <img src="../static/pytorch.png" style="width:40px; position:relative; left: -10px; display:inline-block;">
+            <h1 style="text-align: center; display:inline-block;">Real Time Safe Driving Assistance</h1>
+
+          <h2 style="text-align: center;">Driving Detection</h2>
+        </div>
+          <img src="../static/t1.jpg" style="width:100px; position:relative; left: -10px; display:inline-block;">
+          <form action="http://127.0.0.1:5000/stop" method="post">
+    <button type="submit" name="stop" value="b">stop driving</button>
+  </form>
+      </div>
+<p></p>
+      <div class="container">
+          <img src="{{url_for('video_detect')}}" class="corner">
+      </div>
+    </body>
+</html>
